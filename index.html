@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sam Harrison — Resume</title>
+  <meta name="description" content="Plain, single-column engineering resume (no photo, no columns, no frills)." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['var(--font-body)', 'ui-sans-serif', 'system-ui', 'Segoe UI', 'Roboto', 'Helvetica Neue', 'Arial']
+          },
+          fontSize: {
+            'xxs': ['0.625rem', { lineHeight: '1rem' }]
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    :root {
+      --bg: #f1f8f5;
+      --fg: #0b3d2e;
+      --font-body: "Inter";
+    }
+    @media print {
+      :root { --bg: #ffffff; --fg: #000000; }
+      @page { margin: 0.5in; }
+      a { text-decoration: none; color: inherit; }
+    }
+  </style>
+</head>
+<body class="bg-[var(--bg)] text-[var(--fg)] font-sans leading-tight antialiased">
+  <main class="mx-auto max-w-[800px] p-4 md:p-10 print:p-0">
+
+    <header class="mb-2">
+      <h1 class="text-xl font-bold tracking-tight">Sam Harrison</h1>
+      <p class="text-xxs">MScAC @ UofT · SWE @ Databricks / Neon</p>
+      <p class="text-xxs italic">samharrison@cs.toronto.edu</p>
+    </header>
+
+    <div class="h-2"></div>
+
+    <section class="mt-3 grid grid-cols-[4.75rem_1fr] sm:grid-cols-[7rem_1fr] gap-x-2 sm:gap-x-4">
+      <div class="pt-1">
+        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Education</h2>
+      </div>
+      <div>
+        <div class="mt-1">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">MSc in Applied Computing, Computer Science</span> — University of Toronto</div>
+            <div class="text-xs whitespace-nowrap">2025 - 2027</div>
+          </div>
+        </div>
+
+        <div class="mt-2">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">BSc in Computing Technology</span> — University of Ottawa</div>
+            <div class="text-xs whitespace-nowrap">2020 - 2025</div>
+          </div>
+          <div class="text-xxs italic">GPA: 3.99 / 4.00</div>
+        </div>
+
+        <div class="mt-2">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">BASc in Chemical Engineering</span> — University of Ottawa</div>
+            <div class="text-xs whitespace-nowrap">2020 - 2025</div>
+          </div>
+          <div class="text-xxs italic">GPA: 3.93 / 4.00</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4 grid grid-cols-[4.75rem_1fr] sm:grid-cols-[7rem_1fr] gap-x-2 sm:gap-x-4">
+      <div class="pt-1">
+        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Experience</h2>
+      </div>
+      <div>
+        <article class="mt-1">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">Software Engineer</span> — Neon</div>
+            <div class="text-xs whitespace-nowrap">Nov 2024 - Present</div>
+          </div>
+          <div class="text-xs">San Francisco, CA (Remote)</div>
+        </article>
+
+        <article class="mt-3">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">Machine Learning Engineer II</span> — Skyworks Solutions Inc.</div>
+            <div class="text-xs whitespace-nowrap">Jul 2024 - Nov 2024</div>
+          </div>
+          <div class="text-xs">Ottawa, ON</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Developed PINNs for GaAs pHEMT devices; improved bias point selection accuracy and reduced simulation wall time</li>
+            <li>Implemented PyTorch-to-Verilog-A transpiler for direct integration of trained models into Cadence/Keysight simulators</li>
+            <li>Built CLI for HPC ML workflows through templated resource allocation, automated storage mounting, containerized Apptainer environments, and experiment monitoring</li>
+          </ul>
+        </article>
+
+        <article class="mt-3">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">Algorithm Developer Intern</span> — GBatteries</div>
+            <div class="text-xs whitespace-nowrap">Aug 2023 - Jan 2024</div>
+          </div>
+          <div class="text-xs">Ottawa, ON</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Developed CNN-LSTM and LightGBM models for Li-Ion state estimation; improved accuracy by 4% and enabled edge-device inference</li>
+            <li>Built FastAPI + Redis real-time inference service for low-latency predictions on thousands of charging cycles</li>
+            <li>Consolidated multi-platform battery data into MongoD and developed a React based web platform for analysis of battery cycling and EIS results</li>
+          </ul>
+        </article>
+
+        <article class="mt-3">
+          <div class="flex items-baseline justify-between gap-3">
+            <div class="text-xs"><span class="font-semibold">Junior Data Scientist</span> — Public Services and Procurement Canada</div>
+            <div class="text-xs whitespace-nowrap">Apr 2022 - Sep 2022</div>
+          </div>
+          <div class="text-xs">Quebec, QC</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Automated review system for the National Project Management System; reduced quarterly review time from 60+ hours to ~5 minutes</li>
+            <li>Built dashboard to visualize trends by project, region, and manager</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-4 grid grid-cols-[4.75rem_1fr] sm:grid-cols-[7rem_1fr] gap-x-2 sm:gap-x-4">
+      <div class="pt-1">
+        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Portfolio</h2>
+      </div>
+      <div>
+        <article class="mt-1">
+          <div class="text-xs"><span class="font-semibold">FLood2</span> — Undergraduate Research</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Highly parallel turbulence characterization algorithm based on the Lambda-2 criterion, implemented in C++11 with MPI and mesh partitioning, and designed for execution on HPC clusters.</li>
+          </ul>
+        </article>
+
+        <article class="mt-3">
+          <div class="text-xs"><span class="font-semibold">TensorCraft</span> — <a href="https://tensorcraft.click" target="_blank" class="underline italic">tensorcraft.click</a></div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Drag'n'drop neural network builder with real-time feedback on tensor shapes and compilation to PyTorch implementation</li>
+          </ul>
+        </article>
+
+        <article class="mt-3">
+          <div class="text-xs"><span class="font-semibold">Engineering Capstone</span> — Hatch Ltd.</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Collaboration with Hatch Ltd. to design a uranium milling process for a pilot plant in Saskatchewan, 1st place at University of Ottawa plant design competition</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="mt-4 grid grid-cols-[4.75rem_1fr] sm:grid-cols-[7rem_1fr] gap-x-2 sm:gap-x-4">
+      <div class="pt-[2px]">
+        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Skills</h2>
+      </div>
+      <div>
+        <p class="text-[11px] sm:text-xs leading-snug">
+          <span class="font-semibold">Languages:</span> Python, Rust, Typescript ·
+          <span class="font-semibold">ML/DL:</span> PyTorch, SciKit Learn, Polars, Pandas, NumPy ·
+          <span class="font-semibold">Databases:</span> SQL, Postgres, MongoDB, Redis ·
+          <span class="font-semibold">DevOps:</span> Docker, Git, CI, Linux, AWS ·
+          <span class="font-semibold">WebDev:</span> React, Next, Tailwind, Zustand
+        </p>
+      </div>
+    </section>
+
+    <section class="mt-6 flex justify-center">
+      <ul class="list-none text-center">
+        <li class="text-xs">© 2025 Sam. All rights reserved.</li>
+        <li class="text-xs">Template at <a href="https://github.com/sam-harri/30secondCV" target="_blank" class="underline italic ">github.com/sam-harri/30secondCV</a></li>
+      </ul>
+    </section>
+
+  </main>
+</body>
+</html>
