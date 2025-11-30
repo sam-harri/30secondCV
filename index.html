@@ -56,12 +56,36 @@
   </style>
 </head>
 <body class="bg-[var(--bg)] text-[var(--fg)] font-sans leading-tight antialiased">
-  <main class="mx-auto max-w-[800px] p-4 md:p-10 print:p-0">
+  <main class="mx-auto max-w-[850px] p-4 md:p-10 print:p-0">
 
     <header class="mb-2">
       <h1 class="text-xl font-bold tracking-tight">Sam Harrison</h1>
-      <p class="text-xxs">MScAC @ UofT · SWE @ Databricks / Neon</p>
-      <p class="text-xxs italic">samharrison@cs.toronto.edu</p>
+      <div class="flex flex-wrap items-center gap-2 text-xxs text-[var(--fg)]/70">
+        <a target="_blank" href="mailto:samharrison@cs.toronto.edu" class="flex items-center gap-1 hover:text-[var(--fg)]">
+          <span class="sr-only">Email</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+            <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z"></path>
+            <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z"></path>
+          </svg>
+          <span class="underline">samharrison@cs.toronto.edu</span>
+        </a>
+        <span class="text-[var(--fg)]/40">·</span>
+        <a target="_blank" href="https://github.com/sam-harri" class="flex items-center gap-1 hover:text-[var(--fg)]">
+          <span class="sr-only">GitHub</span>
+          <svg fill="currentColor" viewBox="0 0 24 24" aria-hidden="true" class="w-4 h-4">
+            <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+          </svg>
+          <span class="underline italic">github.com/sam-harri</span>
+        </a>
+        <span class="text-[var(--fg)]/40">·</span>
+        <a target="_blank" href="https://www.linkedin.com/in/sam-harri/" class="flex items-center gap-1 hover:text-[var(--fg)]">
+          <span class="sr-only">LinkedIn</span>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="w-4 h-4">
+            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+          </svg>
+          <span class="underline italic">linkedin.com/in/sam-harri</span>
+        </a>
+      </div>
     </header>
 
     <div class="h-2"></div>
@@ -76,6 +100,7 @@
             <div class="text-xs"><span class="font-semibold">MSc in Applied Computing, Computer Science</span> — University of Toronto</div>
             <div class="text-xs whitespace-nowrap">2025 - 2027</div>
           </div>
+          <div class="text-xxs italic">Focus on distributed systems and storage systems</div>
         </div>
 
         <div class="mt-2">
@@ -103,16 +128,20 @@
       <div>
         <article class="mt-1">
           <div class="flex items-baseline justify-between gap-3">
-            <div class="text-xs"><span class="font-semibold">Software Engineer</span> — Databricks (Previously Neon)</div>
-            <div class="text-xs whitespace-nowrap">Nov 2024 - Present</div>
+            <div class="text-xs"><span class="font-semibold">Software Engineer / Community Manager</span> — Databricks</div>
+            <div class="text-xs whitespace-nowrap">Oct 2024 - Present</div>
           </div>
-          <div class="text-xs">San Francisco, CA (Remote)</div>
+          <div class="text-xs">Remote — Bay Area, CA</div>
+          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
+            <li>Built sync and async SQL-over-HTTP Python drivers with bidirectional type mapping, reducing latency by cutting connection overhead by 6 round-trips for single-shot queries in serverless environments</li>
+            <li>Created an automated social media scraper that tracked untagged Neon mentions and used a Llama-8B classifier to filter noise and highlight real problems; surfaced, triaged, and routed hundreds of support tickets</li>
+          </ul>
         </article>
 
         <article class="mt-3">
           <div class="flex items-baseline justify-between gap-3">
-            <div class="text-xs"><span class="font-semibold">Machine Learning Engineer II</span> — Skyworks Solutions Inc.</div>
-            <div class="text-xs whitespace-nowrap">Jul 2024 - Nov 2024</div>
+            <div class="text-xs"><span class="font-semibold">Machine Learning Engineer</span> — Skyworks Solutions</div>
+            <div class="text-xs whitespace-nowrap">Jul 2024 - Oct 2024</div>
           </div>
           <div class="text-xs">Ottawa, ON</div>
           <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
@@ -137,10 +166,10 @@
 
         <article class="mt-3">
           <div class="flex items-baseline justify-between gap-3">
-            <div class="text-xs"><span class="font-semibold">Junior Data Scientist</span> — Public Services and Procurement Canada</div>
+            <div class="text-xs"><span class="font-semibold">Data Science Intern</span> — Public Services and Procurement Canada</div>
             <div class="text-xs whitespace-nowrap">Apr 2022 - Sep 2022</div>
           </div>
-          <div class="text-xs">Quebec, QC</div>
+          <div class="text-xs">Gatineau, QC</div>
           <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
             <li>Developed an automated review system for the National Project Management System to provide early warnings for projects at risk of exceeding time, budget, or scope constraints, reducing the quarterly review timeline from over 60 hours to approximately 5 minutes</li>
             <li>Created a comprehensive dashboard to visualize project data, highlighting trends across projects, regions, and project managers</li>
@@ -151,34 +180,27 @@
 
     <section class="mt-4 grid grid-cols-[4.75rem_1fr] sm:grid-cols-[7rem_1fr] gap-x-2 sm:gap-x-4">
       <div class="pt-1">
-        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Portfolio</h2>
+        <h2 class="text-[10px] sm:text-xs font-semibold uppercase tracking-[0.14em]">Projects</h2>
       </div>
       <div>
         <article class="mt-1">
-          <div class="text-xs"><span class="font-semibold">FLood2</span> — Undergraduate Research in CFD | <a href="https://blog.samharrison.ca/posts/flood2/" target="_blank" class="underline italic">blog.samharrison.ca/posts/flood2</a></div>
+          <div class="text-xs"><span class="font-semibold">FLood2</span> — Undergraduate Research in CFD | <a href="https://blog.samharrison.ca/posts/flood2/" target="_blank" class="underline italic">blog.samharrison.ca/posts/flood2</a> | <span class="italic">Rust, C++, Python, OpenMPI</span></div>
           <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
-            <li>Novel, highly parallel turbulence characterization algorithm designed for execution on HPC clusters, and applied to DNS results from Nektar++ simulations. Implemented in C++11, Python, and Rust</li>
+            <li>Novel, highly parallel turbulence characterization algorithm designed for execution on HPC clusters</li>
           </ul>
         </article>
 
         <article class="mt-1">
-          <div class="text-xs"><span class="font-semibold">pgtensor</span> | <a href="https://github.com/sam-harri/pgtensor" target="_blank" class="underline italic">github.com/sam-harri/pgtensor</a></div>
+          <div class="text-xs"><span class="font-semibold">pgtensor</span> | <a href="https://github.com/sam-harri/pgtensor" target="_blank" class="underline italic">github.com/sam-harri/pgtensor</a> | <span class="italic">Rust, Postgres, ONNX, pgrx</span></div>
           <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
-            <li>Postgres extension written in Rust adding a tensor data type and an ONNX inference engine for in-database model execution using background worker processes and shared memory; supports multiple dtypes and shape validation</li>
+            <li>Postgres extension written in Rust adding a tensor data type using an ATen styled memory-layout and an ONNX inference engine for in-database model execution using background worker processes and shared memory</li>
           </ul>
         </article>
 
         <article class="mt-3">
-          <div class="text-xs"><span class="font-semibold">TensorCraft</span> | <a href="https://tensorcraft.click" target="_blank" class="underline italic">tensorcraft.click</a></div>
+          <div class="text-xs"><span class="font-semibold">TensorCraft</span> | <a href="https://tensorcraft.click" target="_blank" class="underline italic">tensorcraft.click</a> | <span class="italic">PyTorch, React, Next.js, AWS (RDS, Lambda, S3, API Gateway)</span></div>
           <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
             <li>Drag'n'drop neural network builder with real-time feedback on tensor shapes and compilation to PyTorch implementation</li>
-          </ul>
-        </article>
-
-        <article class="mt-3">
-          <div class="text-xs"><span class="font-semibold">Engineering Capstone</span> — Hatch Ltd.</div>
-          <ul class="mt-1 list-disc pl-5 text-xs space-y-1">
-            <li>Collaboration with Hatch Ltd. to design a uranium milling process for a pilot plant in Saskatchewan, 1st place at University of Ottawa plant design competition</li>
           </ul>
         </article>
       </div>
@@ -190,11 +212,11 @@
       </div>
       <div>
         <p class="text-[11px] sm:text-xs leading-snug">
-          <span class="font-semibold">Languages:</span> Python, Rust, Typescript ·
-          <span class="font-semibold">ML/DL:</span> PyTorch, SciKit Learn, Polars, Pandas, NumPy, ONNX ·
-          <span class="font-semibold">Databases:</span> SQL, Postgres, MongoDB, Redis ·
+          <span class="font-semibold">Languages:</span> Python, Rust, TypeScript ·
+          <span class="font-semibold">ML/DL:</span> PyTorch, scikit-learn, Polars, Pandas, NumPy, ONNX ·
+          <span class="font-semibold">Databases:</span> Postgres, MongoDB, Redis ·
           <span class="font-semibold">DevOps:</span> Docker, Compose, Git, CI, Linux, AWS ·
-          <span class="font-semibold">WebDev:</span> React, Next, Tailwind, Drizzle
+          <span class="font-semibold">Other:</span> React, Next, Tailwind, Drizzle
         </p>
       </div>
     </section>
